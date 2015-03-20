@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0042)file:///C:/wamp/www/cat2/registration.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     
+
+     <title>Resume</title>
+
+     <style type="text/css">
+        * { margin: 0; padding: 0; }
+        body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background: url(images/noise.jpg); }
+        .clear { clear: both; }
+        #page-wrap { width: 800px; margin: 40px auto 60px; }
+        #pic { float: right; margin: -30px 0 0 0; }
+        h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
+        h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
+        h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
+        p { margin: 0 0 16px 0; }
+        a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
+        a:hover { border-bottom-style: solid; color: black; }
+        ul { margin: 0 0 32px 17px; }
+        #objective { width: 500px; float: left; }
+        #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
+        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
+        dd { width: 600px; float: right; }
+        dd.clear { float: none; margin: 0; height: 15px; }
+     </style>
+</head>
+
+<body>
+
+    <div id="page-wrap">
+    <form name="registrationform" action="registration.php" enctype="multipart/form-data" method="post">
+    <div id="pic">
+        Choose file:
+            <input type="file" name="image" />
+            </div>
+           <!-- <p><input type="submit" name="submit" id="submit" value="Upload" />-->
+    
+        <div id="contact-info" class="vcard">
+        
+            <!-- Microformats! -->
+        
+            <h1 class="fn"><input type="text" name="name" placeholder="Type your Full Name here" size="40"/></h1>
+        
+            <p>
+               Mobile: <span class="tel"><input type="text" name="cell" required></span><br>
+                Email: <input type="text" name="email" required>
+            </p>
+        </div>
+                
+        <div id="objective">
+      <h3> Objective</h3>
+            <p>
+                <textarea name="objective" rows="5" cols="30" placeholder="Type the objective here" required></textarea>
+            </p>
+        </div>
+        
+        <div class="clear"></div>
+        
+        <dl>
+            <dd class="clear"></dd>
+            
+            <dt>Education</dt>
+            <dd>
+                <h2><input type="text" name="univname" placeholder="University name" size="50" required/></h2>
+                <p><strong>Major:</strong> <input type="text" name="major" placeholder="Type your major here" size="35" required /><br>
+                   <strong>Minor:</strong> <input type="text" name="minor" placeholder="Type your minor studies here" size="35" required /></p>
+            </dd>
+            
+            <dd class="clear"></dd>
+            
+            <dt>Skills</dt>
+            <dd>
+                <h2><input type="text" name="skillname1" placeholder="Type of skills eg:technical, non-technical" required /></h2>
+                <p><input type="text" name="skill1" placeholder="Type your skills" size="35" required /></p>
+                
+                <h2><input type="text" name="skillname2" placeholder="Type of skills eg:technical, non-technical" required /></h2>
+                <p><input type="text" name="skill2" placeholder="Type your skills" size="35" required /></p>
+            </dd>
+            
+            <dd class="clear"></dd>
+            
+            <dt>Experience</dt>
+            <dd>
+                <h2><input type="text" name="exp1" placeholder="Type of your awards or experience "  required size="40"/> 
+                <span><input type="text" name="duration1" placeholder="Date and place of your achievement" required size="30"/></span></h2>
+                <ul>
+                    <li><input type="text" name="exp1desc" placeholder="Description about the experience" required size="35"/></li>
+                    
+                </ul>
+                
+                <h2><input type="text" name="exp2" placeholder="Type of your award or experience" size="40"/><span><input type="text" name="duration2" placeholder="Date and place of your achievement" size="30"/></span></h2>
+                <ul>
+                    <li><input type="text" name="exp2desc" placeholder="Description about the experience" size="35"/></li>
+                    
+                </ul> 
+            </dd>
+            
+            <dd class="clear"></dd>
+            
+            <dt>Hobbies</dt>
+            <dd><input type="text" name="hobby1" placeholder="Type your hobbies" size="40" required /></dd>
+            <dd><input type="text" name="hobby1" placeholder="Type your hobbies" size="40" required /></dd>
+            <dd class="clear"></dd>
+            
+            <dt>References</dt>
+            <dd>Available on request</dd>
+            
+            <dd class="clear"></dd>
+        </dl>
+        <input type="submit" name="submit" />
+        <div class="clear"></div>
+    </form>
+    </div>
+
+
+
+</body></html>

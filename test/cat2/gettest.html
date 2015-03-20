@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ajax Get</title>
+ <script src="js/jquery-2.1.1.min.js"></script>
+</head>
+
+<body>
+<script>
+/*
+$.get( "info.php", function() {
+  $( "body" )
+    .append( "Name: " + data.name ) // John
+
+}, "json" );
+
+*/
+/*
+$.get("info.php", { 'email' : '' },function(data){
+	document.write(data[0].name);
+	},'json');
+  */
+  $.post("signup.php", { 'email' : 'ttnavin92@gmial' ,'name' : 'avinash' },function(data){
+	document.write(data.status);
+	},'json');
+	
+/*	info = [];
+  info['email'] = 'avi';
+info['name'] = 'avinash';
+
+$.ajax({
+   type: "POST",
+   data: {info:info},
+   url: "signup.php",
+   success: function(msg){
+    document.write(msg.status);
+	document.writeln(msg.msg);
+	
+   }
+});*/
+</script>
+
+</body>
+</html>
